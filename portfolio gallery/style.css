@@ -15,6 +15,7 @@
     align-items: center;
   
 }
+/* text and heading */
 .left{
     display: flex;
     flex-direction: column;
@@ -36,8 +37,9 @@
 
 }
 
+/* image galary */
 .right{
-    width: 50vw;
+    width: 55vw;
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(3,1fr);
@@ -71,4 +73,40 @@
 .row2{
     grid-row: span 2;
 
+}
+
+@media screen and (max-width:1024px){
+    .container{
+        font-size:1rem ;
+    }
+
+}
+
+@media screen and (max-width:768px){
+    .container{
+       flex-direction: column;
+    }
+    .left{
+        width: 80%;
+        height: 50vh;
+    }
+    .right{
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width:640px){
+    
+    .left{
+        height: 40vh;
+    }
+    .right{
+        display: flex;
+        width: 80vw;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .box{
+        height: 30vh;
+    }
 }
