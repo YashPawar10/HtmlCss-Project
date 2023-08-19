@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Website</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediqQuerry.css" />
   </head>
   <body>
     <!-- topbar -->
@@ -15,14 +16,13 @@
         >
       </p>
     </div>
-
     <!-- navbar -->
     <div class="navbar container">
       <div>
         <a href=""><img src="img/asset 1.png" alt="" /></a>
       </div>
       <div>
-        <ul class="nav-list">
+        <ul class="nav-list" id="nav-list1">
           <li><a class="nav-link" href="#">Product</a></li>
           <li><a class="nav-link" href="#">Customers</a></li>
           <li><a class="nav-link" href="#">Pricing</a></li>
@@ -31,6 +31,9 @@
           <li><a class="nav-link primary-button" href="#">Sign up</a></li>
         </ul>
       </div>
+      <a href="#" class="menu" id="toggle-menu"
+        ><i class="fa-solid fa-bars nav-link"></i
+      ></a>
     </div>
 
     <!-- main -->
@@ -138,7 +141,7 @@
           </p>
         </div>
       </div>
-      <div class="big-feature container">
+      <div class="big-feature reverse container">
         <div class="big-feature-text">
           <h3>Optimisation for</h3>
           <h2>Marketers</h2>
@@ -164,27 +167,27 @@
     </div>
 
     <!-- example -->
-    <div class="example container"  >
+    <div class="example container">
       <div class="example-heading">
         <h2>One platform,endless possibilities</h2>
-        <a href="#" class="secondary-button">See more examples <i class="fa-solid fa-arrow-right"></i
-          ></a>
+        <a href="#" class="secondary-button"
+          >See more examples <i class="fa-solid fa-arrow-right"></i
+        ></a>
       </div>
       <div class="example-card-container">
         <a href="#" class="example-card bg-img1">
-            <p>Can usess find important pages on my website?</p>
+          <p>Can usess find important pages on my website?</p>
         </a>
         <a href="#" class="example-card bg-img2">
-            <p>Can uses complete a task in my software interface?</p>
+          <p>Can uses complete a task in my software interface?</p>
         </a>
         <a href="#" class="example-card bg-img3">
-            <p>Is my website's intended audience clear?</p>
+          <p>Is my website's intended audience clear?</p>
         </a>
         <a href="#" class="example-card bg-img4">
-            <p>Do visitors understand what a page is about?</p>
+          <p>Do visitors understand what a page is about?</p>
         </a>
       </div>
-      
     </div>
 
     <!-- cta -->
@@ -196,11 +199,11 @@
 
     <!-- footer -->
     <div class="footer container">
-      <div class="foot-img" >
+      <div class="foot-img">
         <a href=""><img src="img/asset 1.png" alt="" /></a>
       </div>
       <div class="product">
-        <h3 >Product</h3>
+        <h3>Product</h3>
         <a href="#">Overview</a>
         <a href="#">Pricing</a>
         <a href="#">UsabilityHub panel</a>
@@ -208,7 +211,7 @@
         <a href="#">Status page</a>
       </div>
       <div class="product">
-        <h3 >Methodology</h3>
+        <h3>Methodology</h3>
         <a href="#">Overview</a>
         <a href="#">Pricing</a>
         <a href="#">UsabilityHub panel</a>
@@ -216,27 +219,38 @@
         <a href="#">Status page</a>
       </div>
       <div class="product">
-        <h3 >Resources</h3>
+        <h3>Resources</h3>
         <a href="#">Overview</a>
         <a href="#">Pricing</a>
         <a href="#">UsabilityHub panel</a>
         <a href="#">Customers</a>
         <a href="#">Status page</a>
       </div>
-      
     </div>
 
     <!-- subfooter -->
     <div class="subfooter">
-       <a class="link-hover" href="">Privacy policy</a>
+      <a class="link-hover" href="">Privacy policy</a>
       <a class="link-hover" href="">Terms & Condition</a>
-      <a href="">Security information</a>
+      <a class="link-hover" href="">Security information</a>
+    </div>
+    <div class="subfooter">
       <a href=""><i class="fa-brands fa-facebook"></i></a>
       <a href=""><i class="fa-brands fa-twitter"></i></a>
+      <a href=""><i class="fa-brands fa-youtube"></i></a>
+      <a href=""><i class="fa-brands fa-linkedin"></i></a>
     </div>
+
     <script
       src="https://kit.fontawesome.com/5f31d7317c.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const toggleButton = document.getElementById("toggle-menu");
+      const navLink = document.getElementById("nav-list1");
+      toggleButton.addEventListener("click", () => {
+        navLink.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>

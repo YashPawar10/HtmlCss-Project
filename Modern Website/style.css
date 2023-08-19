@@ -102,10 +102,11 @@ li {
   justify-content: space-between;
   padding-top: 15px;
   align-items: center;
+  position: relative;
 }
 .navbar img,
 .foot-img img {
-  width: 10vw;
+  width: 160px;
 }
 
 .nav-list {
@@ -124,34 +125,41 @@ li {
   transition: 0.1s ease-in-out;
 }
 
+.menu {
+  display: none;
+}
+
 /* main section */
 .main {
   display: flex;
   margin-top: 30px;
   align-items: center;
+  justify-content: space-between;
   gap: 40px;
 }
 
 .left {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
+  width: 300px;
 }
 
 .main .left h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 600;
 }
 .main .left p {
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .main .left a {
-  width: 170px;
+  width: 200px;
+  text-align: center;
 }
 
 .main-img {
-  width: 570px;
+  width: 500px;
 }
 
 /* company section */
@@ -359,6 +367,9 @@ li {
   gap: 30px;
   background-color: #b9cde4;
   padding: 13px;
+}
+.subfooter div {
+  padding: 5px;
 }
 
 .subfooter a:hover {
