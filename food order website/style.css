@@ -15,7 +15,7 @@ html {
 .home::before {
   content: "";
   position: absolute;
-  background-image: url("/images/bg.jpg");
+  background-image: url("images/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -188,7 +188,7 @@ html {
 }
 #client-section::before {
   content: "";
-  background-image: url("/images/client.jpg");
+  background-image: url("images/client.jpg");
   background-size: cover;
   top: 0px;
   position: absolute;
@@ -230,7 +230,7 @@ html {
 
 #contact_section::before {
   content: "";
-  background-image: url("/images/contact.jpg");
+  background-image: url("images/contact.jpg");
   background-position: center;
   background-size: cover;
   top: 0px;
