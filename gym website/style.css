@@ -6,7 +6,7 @@
 
 body {
   padding-top: 10px;
-  background-image: url("/picture/background.jpg");
+  background-image: url("picture/background.jpg");
   color: white;
   text-decoration: none;
   background-size: cover;
